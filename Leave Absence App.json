@@ -1,0 +1,52 @@
+{
+    "schema": "1.0",
+    "details": {
+        "displayName": "Leave Absence App",
+        "description": "",
+        "createdTime": "2025-10-03T17:18:48.7222468Z",
+        "packageTelemetryId": "90a7cf76-6154-4e8f-b521-98852aaf2651",
+        "creator": "celestina.gbangbola@tunehacks.onmicrosoft.com",
+        "sourceEnvironment": "tunehacks (default)"
+    },
+    "resources": {
+        "b5f798bd-ebe3-4d2f-acda-c94b3e74a8aa": {
+            "type": "Microsoft.PowerApps/apps",
+            "suggestedCreationType": "Update",
+            "creationType": "New, Update",
+            "details": {
+                "displayName": "Leave Of Absence App"
+            },
+            "configurableBy": "User",
+            "dependsOn": [
+                "cee0deaf-65b2-4eaa-b877-c43bc485921e",
+                "620cf85f-0dd4-4a39-96f9-ebb7d60118cc"
+            ]
+        },
+        "cee0deaf-65b2-4eaa-b877-c43bc485921e": {
+            "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+            "name": "shared_sharepointonline",
+            "type": "Microsoft.PowerApps/apis",
+            "suggestedCreationType": "Existing",
+            "details": {
+                "displayName": "SharePoint",
+                "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1762/1.0.1762.4298/sharepointonline/icon.png"
+            },
+            "configurableBy": "System",
+            "hierarchy": "Child",
+            "dependsOn": []
+        },
+        "620cf85f-0dd4-4a39-96f9-ebb7d60118cc": {
+            "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+            "name": "shared_office365users",
+            "type": "Microsoft.PowerApps/apis",
+            "suggestedCreationType": "Existing",
+            "details": {
+                "displayName": "Office 365 Users",
+                "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1767/1.0.1767.4341/office365users/icon.png"
+            },
+            "configurableBy": "System",
+            "hierarchy": "Child",
+            "dependsOn": []
+        }
+    }
+}

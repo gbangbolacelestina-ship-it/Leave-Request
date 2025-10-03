@@ -1,0 +1,83 @@
+{
+    "schema": "1.0",
+    "details": {
+        "displayName": "Leave Request",
+        "description": "",
+        "createdTime": "2025-10-03T17:16:00.9338039Z",
+        "packageTelemetryId": "f0bb47af-68c5-441a-8c19-55fd7740b1d7",
+        "creator": "N/A",
+        "sourceEnvironment": ""
+    },
+    "resources": {
+        "99de74d7-4127-483a-8fc8-9b5b3e2c49e5": {
+            "type": "Microsoft.Flow/flows",
+            "suggestedCreationType": "Update",
+            "creationType": "Existing, New, Update",
+            "details": {
+                "displayName": "Leave Request"
+            },
+            "configurableBy": "User",
+            "hierarchy": "Root",
+            "dependsOn": [
+                "08803afb-2437-4696-b8f6-8b21835bcdde",
+                "f75e2f20-f1a0-4410-bc76-4c42fc00c7bb",
+                "cee0deaf-65b2-4eaa-b877-c43bc485921e",
+                "fc841f30-df5e-4772-912e-6e1a403d09d2"
+            ]
+        },
+        "08803afb-2437-4696-b8f6-8b21835bcdde": {
+            "id": "/providers/Microsoft.PowerApps/apis/shared_office365",
+            "name": "shared_office365",
+            "type": "Microsoft.PowerApps/apis",
+            "suggestedCreationType": "Existing",
+            "details": {
+                "displayName": "Office 365 Outlook",
+                "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1763/1.0.1763.4311/office365/icon.png"
+            },
+            "configurableBy": "System",
+            "hierarchy": "Child",
+            "dependsOn": []
+        },
+        "f75e2f20-f1a0-4410-bc76-4c42fc00c7bb": {
+            "type": "Microsoft.PowerApps/apis/connections",
+            "suggestedCreationType": "Existing",
+            "creationType": "Existing",
+            "details": {
+                "displayName": "celestina.gbangbola@tunehacks.onmicrosoft.com",
+                "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1763/1.0.1763.4311/office365/icon.png"
+            },
+            "configurableBy": "User",
+            "hierarchy": "Child",
+            "dependsOn": [
+                "08803afb-2437-4696-b8f6-8b21835bcdde"
+            ]
+        },
+        "cee0deaf-65b2-4eaa-b877-c43bc485921e": {
+            "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+            "name": "shared_sharepointonline",
+            "type": "Microsoft.PowerApps/apis",
+            "suggestedCreationType": "Existing",
+            "details": {
+                "displayName": "SharePoint",
+                "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1762/1.0.1762.4298/sharepointonline/icon.png"
+            },
+            "configurableBy": "System",
+            "hierarchy": "Child",
+            "dependsOn": []
+        },
+        "fc841f30-df5e-4772-912e-6e1a403d09d2": {
+            "type": "Microsoft.PowerApps/apis/connections",
+            "suggestedCreationType": "Existing",
+            "creationType": "Existing",
+            "details": {
+                "displayName": "celestina.gbangbola@tunehacks.onmicrosoft.com",
+                "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1762/1.0.1762.4298/sharepointonline/icon.png"
+            },
+            "configurableBy": "User",
+            "hierarchy": "Child",
+            "dependsOn": [
+                "cee0deaf-65b2-4eaa-b877-c43bc485921e"
+            ]
+        }
+    }
+}
